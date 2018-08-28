@@ -16,14 +16,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createObjects()
+        assignProperties()
     }
     
     func createObjects() {
         sean = Person(name: "Sean", macbook: nil)
         matilda = MacBook(name: "Matilda", owner: nil)
         
+    }
+    
+
+    func assignProperties() {
+        sean?.macbook = matilda
+        matilda?.owner = sean
+        
         sean = nil
-        matilda = nil
     }
 
     
