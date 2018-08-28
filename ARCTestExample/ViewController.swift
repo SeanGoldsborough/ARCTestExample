@@ -25,7 +25,8 @@ class ViewController: UIViewController {
         
     }
     
-
+    // Creates a retain cycle by having multiple strong references.
+    // Need to make one var weak (i.e. Classes.swift,line 27).
     func assignProperties() {
         sean?.macbook = matilda
         matilda?.owner = sean

@@ -24,7 +24,7 @@ class Person {
 
 class MacBook {
     let name: String
-    var owner: Person?
+    weak var owner: Person?
     
     init(name: String, owner: Person?) {
         self.name = name
