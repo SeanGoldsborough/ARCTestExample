@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-   
+    var sean: Person?
+    var matilda: MacBook?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        createObjects()
+    }
+    
+    func createObjects() {
+        sean = Person(name: "Sean", macbook: nil)
+        matilda = MacBook(name: "Matilda", owner: nil)
+        
+        sean = nil
+        matilda = nil
     }
 
     
